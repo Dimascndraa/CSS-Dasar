@@ -1,0 +1,91 @@
+ body{
+ 	background-image: url(pattern.png);
+ }
+ h1{
+ 	font-family: arial;
+ }
+ p{
+ 	text-align: center;
+ 	padding: 5px;
+ }
+
+ /*Font Styling*/
+ .paragraf1{
+ 	font-style: italic /*oblique*/ /*normal*/;
+ 	font-variant: /*small-caps*/ normal;
+ 	font-weight: bold /*bolder*/ /*normal*/ /*100-900*/ /*lighter*/;
+ 	font-size: 12px /*10%*/ /*2em*/;
+ 	line-height: 20px /*50%*/ /*normal*/;
+ 	font-family: Verdana, sans-serif;
+
+ 	/*Shorthand*/
+ 	/*font: italic normal bold 12px 20px Verdana, sans-serif;*/
+ }
+
+ /*Text Styling*/
+ .paragraf2{
+ 	color: royalblue /*#4169e1*/ /*rgb(65, 105, 255)*/ /*hsl(0,0,0)*/;
+ 	text-align: /*left*/ /*center*/ /*right*/ justify;
+ 	text-indent: 50px /*5%*/;
+ 	text-decoration: none /*underline*/ /*overline*/ /*line-through*/;
+ 	text-transform: none /*lowercase*/ /*uppercase*/ /*capitalize*/;
+ 	letter-spacing: /*normal*/ 2px; 
+ 	word-spacing: /*normal*/ 5px;
+ }
+
+ /*Background*/
+ .paragraf3{
+ 	background-color: inherit /*#fff*/ /*rgb(65, 105, 255)*/ /*hsl(0,0,0)*/;
+ 	background-image: inherit /*url(gambar.png)*/;
+ 	background-repeat: inherit /*repeat-x;*/ /*repeat-y*/ /*no-repeat*/;
+ 	background-position: inherit /*top/center/bottom*/ /*left/center/right*/;
+ 	/*Shorthand*/
+ 	background: salmon /*url(gambar.png)*/ /*no-repeat*/ /*top right*/;
+ 	border-radius: 5px
+ }
+
+/*Pseudo-class*/
+.hello:link{
+	color: orange;
+}
+.hello:hover{
+	color: salmon;
+	font-family: arial;
+	font-size: 50px;
+}
+.hello:active{
+	font-style: italic;
+}
+.hello:visited{
+	color: red;
+}
+
+
+li:nth-child(even) a{
+	color: green;
+}
+li:nth-child(odd) a{
+	color: plum;
+}
+li:first-child a{
+	color: lightblue;
+}
+li:last-child a{
+	color: salmon;
+}
+li:nth-child(4n) a{
+	color: orange;
+}
+li:nth-child(4n-3) a{
+	color: darkseagreen;
+}
+li:nth-child(even) a:hover{
+	color: hotpink;
+}
+
+.p:first-of-type{
+	color: green;
+}
+.p:last-of-type{
+	color: red;
+}
